@@ -1,36 +1,51 @@
 #!/usr/bin/env node
 import chalk from "chalk";
 import boxen from "boxen";
+import figlet from "figlet";
+import gradient from "gradient-string";
 
-const data = {
-  name: chalk.white.bold("Aashish Moktan"),
-  work: chalk.cyan("Software Engineer"),
-  github: chalk.gray("https://github.com/") + chalk.green("aashish-moktan"),
-  twitter: chalk.gray("https://twitter.com/") + chalk.blue("aashishmoktan9"),
-  linkedin:
-    chalk.gray("https://linkedin.com/in/") +
-    chalk.cyan("aashish-moktan-b65784171"),
-  web: chalk.magenta("https://yourwebsite.com"),
-  labelWork: chalk.white.bold("      Work:"),
-  labelGitHub: chalk.white.bold("    GitHub:"),
-  labelTwitter: chalk.white.bold("   Twitter:"),
-  labelLinkedIn: chalk.white.bold("  LinkedIn:"),
-  labelWeb: chalk.white.bold("       Web:"),
-};
+figlet("Aashish Moktan", (err, data) => {
+  if (err) {
+    console.error("Something went wrong with figlet.");
+    return;
+  }
 
-const output = `
-    ${data.name}
-    ${data.labelWork} ${data.work}
-    ${data.labelGitHub} ${data.github}
-    ${data.labelLinkedIn} ${data.linkedin}
-    ${data.labelWeb} ${data.web}
-`;
+  const header = gradient.pastel.multiline(data);
 
-const boxed = boxen(output, {
-  padding: 1,
-  margin: 1,
-  borderStyle: "round",
-  borderColor: "green",
+  const info = [
+    "",
+    `${chalk.white.bold("💼  Role:")}        ${chalk.cyan(
+      "Software Engineer"
+    )}`,
+    `${chalk.white.bold("📍  Location:")}    ${chalk.yellow("Nepal")}`,
+    `${chalk.white.bold("🛠️   Skills:")}      ${chalk.magenta(
+      "Node.js, Express, React, Python"
+    )}`,
+    `${chalk.white.bold("🌐  Website:")}     ${chalk.blue(
+      "https://aashishmoktan.com.np"
+    )}`,
+    `${chalk.white.bold("🐙  GitHub:")}      ${chalk.green(
+      "https://github.com/aashish-moktan"
+    )}`,
+    `${chalk.white.bold("🔗  LinkedIn:")}    ${chalk.cyan(
+      "https://www.linkedin.com/in/aashish-moktan-b65784171/"
+    )}`,
+    `${chalk.white.bold("📫  Email:")}       ${chalk.white(
+      "aashiislama@gmail.com"
+    )}`,
+    "",
+    `${chalk.gray.italic('"Building things that matter."')}`,
+    "",
+    chalk.dim("npx aashish-moktan"),
+  ].join("\n");
+
+  const box = boxen(info, {
+    padding: 1,
+    margin: 1,
+    borderStyle: "round",
+    borderColor: "green",
+    align: "left",
+  });
+
+  console.log(header + "\n" + box);
 });
-
-console.log(boxed);

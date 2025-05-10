@@ -1,5 +1,5 @@
 {
-  "name": "aashish-moktan-card",
+  "name": "aashish",
   "version": "1.0.0",
   "description": "My NPX business card",
   "type": "module",
@@ -16,6 +16,8 @@
   "license": "MIT",
   "dependencies": {
     "boxen": "^8.0.1",
-    "chalk": "^5.4.1"
+    "chalk": "^5.4.1",
+    "figlet": "^1.8.1",
+    "gradient-string": "^3.0.0"
   }
 }
