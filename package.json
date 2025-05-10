@@ -4,7 +4,7 @@
   "description": "My NPX business card",
   "type": "module",
   "bin": {
-    "aashish-moktan": "card.js"
+    "aashish": "card.js"
   },
   "keywords": [
     "npx",
