@@ -28,7 +28,7 @@ figlet("Aashish Moktan", (err, data) => {
       "https://github.com/aashish-moktan"
     )}`,
     `${chalk.white.bold("🔗  LinkedIn:")}    ${chalk.cyan(
-      "https://www.linkedin.com/in/aashish-moktan-b65784171/"
+      "https://www.linkedin.com/in/aashish-moktan-b65784171"
     )}`,
     `${chalk.white.bold("📫  Email:")}       ${chalk.white(
       "aashiislama@gmail.com"
@@ -36,7 +36,7 @@ figlet("Aashish Moktan", (err, data) => {
     "",
     `${chalk.gray.italic('"Building things that matter."')}`,
     "",
-    chalk.dim("npx aashish-moktan"),
+    chalk.dim("npx aashish"),
   ].join("\n");
 
   const box = boxen(info, {
