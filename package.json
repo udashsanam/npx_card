@@ -1,0 +1,21 @@
+{
+  "name": "aashish-moktan-card",
+  "version": "1.0.0",
+  "description": "My NPX business card",
+  "type": "module",
+  "bin": {
+    "aashish-moktan": "card.js"
+  },
+  "keywords": [
+    "npx",
+    "card",
+    "cli",
+    "business-card"
+  ],
+  "author": "Aashish Moktan",
+  "license": "MIT",
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^5.4.1"
+  }
+}
