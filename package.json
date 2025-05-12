@@ -1,10 +1,10 @@
 {
-  "name": "aashish",
+  "name": "sanam",
   "version": "1.0.0",
   "description": "My NPX business card",
   "type": "module",
   "bin": {
-    "aashish": "card.js"
+    "sanam": "card.js"
   },
   "keywords": [
     "npx",
@@ -12,7 +12,7 @@
     "cli",
     "business-card"
   ],
-  "author": "Aashish Moktan",
+  "author": "sanam udash",
   "license": "MIT",
   "dependencies": {
     "boxen": "^8.0.1",
