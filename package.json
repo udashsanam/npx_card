@@ -1,10 +1,10 @@
 {
-  "name": "sanam",
+  "name": "sanamudash",
   "version": "1.0.0",
   "description": "My NPX business card",
   "type": "module",
   "bin": {
-    "sanam": "card.js"
+    "sanamudash": "card.js"
   },
   "keywords": [
     "npx",
